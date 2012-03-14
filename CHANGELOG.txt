@@ -1,0 +1,3 @@
+CHANGELOG
+
+2012-03-13 2.0.0 Lift the REXML extension from the sixarm_ruby_ramp gem
