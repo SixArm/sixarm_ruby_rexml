@@ -11,7 +11,7 @@ When you do this once, it works for all our gems.
 
 Install the gem with advanced options.
 
-  sudo gem install sixarm_ruby_week --test --trust-policy HighSecurity
+  sudo gem install sixarm_ruby_rexml --test --trust-policy HighSecurity
 
 
 == Notes
