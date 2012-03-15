@@ -9,7 +9,7 @@
 
 This Ruby gem has REXML core extensions to help clean up XML.
 
-  * REXML::Attributes#to_hash: return a new hash of the attribute keys and values.
+  * REXML::Attributes#to_a_hash: return a new hash of the attributes' name value pairs.
   * REXML::Document#remove_attributes: remove all attributes from the document's elements.
   * REXML::Element#remove_attributes: remove all attributes from the element.
 

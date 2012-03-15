@@ -7,13 +7,13 @@ require 'sixarm_ruby_rexml'
 
 describe REXML::Attributes do
 
-  describe "#to_hash" do
+  describe "#to_a_hash" do
     
     it do
       doc=REXML::Document.new('<foo a="b" c="d" e="f"/>')
       expect={"a"=>"b","c"=>"d","e"=>"f"}
-      actual=doc.elements['foo'].attributes.to_hash
-      assert_equal(expect,actual,'XML attributes hash')
+      actual=doc.elements['foo'].attributes.to_a_hash
+      assert_equal(expect,actual)
     end
     
     end

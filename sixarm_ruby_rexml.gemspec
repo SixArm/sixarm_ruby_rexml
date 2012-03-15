@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_rexml"
   s.summary           = "SixArm.com » Ruby » REXML extensions for XML documents, elements, and attributes"
-  s.version           = "2.0.4"
+  s.version           = "2.0.6"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"
