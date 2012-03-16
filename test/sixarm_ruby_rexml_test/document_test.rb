@@ -9,13 +9,12 @@ describe REXML::Document do
 
   describe "#remove_attributes" do
     
-    it do
+    it "returns XML text without attributes" do
       xml="<foo a='b' c='d'><bar e='f' g='h'>text</bar></foo>"
       expect="<foo><bar>text</bar></foo>"
       doc=REXML::Document.new(xml)
       doc.remove_attributes
-      actual=doc.to_s
-      assert_equal(expect,actual)
+      doc.to_s.must_equal expect
     end
     
   end

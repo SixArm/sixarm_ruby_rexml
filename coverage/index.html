@@ -23,14 +23,14 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-03-15T13:26:34-07:00">2012-03-15T13:26:34-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-03-16T15:41:31-07:00">2012-03-16T15:41:31-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">61.11%</span></span>
+    (<span class="covered_percent"><span class="red">64.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -41,9 +41,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>7</b> files in total.
-    <b>54</b> relevant lines. 
+    <b>51</b> relevant lines. 
     <span class="green"><b>33</b> lines covered</span> and
-    <span class="red"><b>21</b> lines missed </span>
+    <span class="red"><b>18</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -101,31 +101,31 @@
       
       <tr>
         <td class="strong"><a href="#3595b43fc4939c01e907404a925b9963f7621f91" class="src_link" title="test/sixarm_ruby_rexml_test/attributes_test.rb">test/sixarm_ruby_rexml_test/attributes_test.rb</a></td>
-        <td class="red strong">66.67 %</td>
-        <td>22</td>
-        <td>12</td>
+        <td class="red strong">72.73 %</td>
+        <td>21</td>
+        <td>11</td>
         <td>8</td>
-        <td>4</td>
+        <td>3</td>
         <td>0.7</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#1b8d4827e5dbda00ab786ac8d9031e463b1d4e2b" class="src_link" title="test/sixarm_ruby_rexml_test/document_test.rb">test/sixarm_ruby_rexml_test/document_test.rb</a></td>
-        <td class="red strong">57.14 %</td>
-        <td>24</td>
-        <td>14</td>
+        <td class="red strong">61.54 %</td>
+        <td>23</td>
+        <td>13</td>
         <td>8</td>
-        <td>6</td>
+        <td>5</td>
         <td>0.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#d7d6e48792a4779dcd4d3d57c336b45c4b1df122" class="src_link" title="test/sixarm_ruby_rexml_test/element_test.rb">test/sixarm_ruby_rexml_test/element_test.rb</a></td>
-        <td class="red strong">57.14 %</td>
-        <td>23</td>
-        <td>14</td>
+        <td class="red strong">61.54 %</td>
+        <td>22</td>
+        <td>13</td>
         <td>8</td>
-        <td>6</td>
+        <td>5</td>
         <td>0.6</td>
       </tr>
       
@@ -538,11 +538,11 @@
         <div class="source_table" id="3595b43fc4939c01e907404a925b9963f7621f91">
   <div class="header">
     <h3>test/sixarm_ruby_rexml_test/attributes_test.rb</h3>
-    <h4><span class="red">66.67 %</span> covered</h4>
+    <h4><span class="red">72.73 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
+      <b>11</b> relevant lines. 
       <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -558,7 +558,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">require 'test/unit'</code>
+          <code class="ruby">require 'minitest/autorun'</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -618,7 +618,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    it do</code>
+          <code class="ruby">    it &quot;converts attributes to a hash of name value pairs&quot; do</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="13">
@@ -636,46 +636,40 @@
         <li class="missed" data-hits="0" data-linenumber="15">
           
           
-          <code class="ruby">      actual=doc.elements['foo'].attributes.to_a_hash</code>
+          <code class="ruby">      doc.elements['foo'].attributes.to_a_hash.must_equal expect</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">      assert_equal(expect,actual)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">    </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby"></code>
@@ -688,11 +682,11 @@
         <div class="source_table" id="1b8d4827e5dbda00ab786ac8d9031e463b1d4e2b">
   <div class="header">
     <h3>test/sixarm_ruby_rexml_test/document_test.rb</h3>
-    <h4><span class="red">57.14 %</span> covered</h4>
+    <h4><span class="red">61.54 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
+      <b>13</b> relevant lines. 
       <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -708,7 +702,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">require 'test/unit'</code>
+          <code class="ruby">require 'minitest/autorun'</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -768,7 +762,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    it do</code>
+          <code class="ruby">    it &quot;returns XML text without attributes&quot; do</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="13">
@@ -798,46 +792,40 @@
         <li class="missed" data-hits="0" data-linenumber="17">
           
           
-          <code class="ruby">      actual=doc.to_s</code>
+          <code class="ruby">      doc.to_s.must_equal expect</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">      assert_equal(expect,actual)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">    </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
@@ -850,11 +838,11 @@
         <div class="source_table" id="d7d6e48792a4779dcd4d3d57c336b45c4b1df122">
   <div class="header">
     <h3>test/sixarm_ruby_rexml_test/element_test.rb</h3>
-    <h4><span class="red">57.14 %</span> covered</h4>
+    <h4><span class="red">61.54 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
+      <b>13</b> relevant lines. 
       <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -870,7 +858,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">require 'test/unit'</code>
+          <code class="ruby">require 'minitest/autorun'</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -930,7 +918,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    it do</code>
+          <code class="ruby">    it &quot;returns XML text without attibutes&quot; do</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="13">
@@ -960,40 +948,34 @@
         <li class="missed" data-hits="0" data-linenumber="17">
           
           
-          <code class="ruby">      actual=doc.to_s</code>
+          <code class="ruby">      doc.to_s.must_equal expect</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">      assert_equal(expect,actual)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>

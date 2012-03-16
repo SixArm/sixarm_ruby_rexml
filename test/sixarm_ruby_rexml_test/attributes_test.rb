@@ -9,14 +9,13 @@ describe REXML::Attributes do
 
   describe "#to_a_hash" do
     
-    it do
+    it "converts attributes to a hash of name value pairs" do
       doc=REXML::Document.new('<foo a="b" c="d" e="f"/>')
       expect={"a"=>"b","c"=>"d","e"=>"f"}
-      actual=doc.elements['foo'].attributes.to_a_hash
-      assert_equal(expect,actual)
+      doc.elements['foo'].attributes.to_a_hash.must_equal expect
     end
     
-    end
+  end
   
 end
 

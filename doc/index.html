@@ -81,12 +81,26 @@
 
 <p>Bundler:</p>
 
-<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_rexml</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>=2.0.4</span><span class='tstring_end'>&quot;</span></span>
+<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_rexml</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>=2.1.0</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
 
 <p>Require:</p>
 
 <pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_rexml</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<h2>High Security (Optional)</h2>
+
+<p>To enable high security for all our gems:</p>
+
+<pre class="code ruby"><code>wget http://sixarm.com/sixarm.pem
+gem cert --add sixarm.pem
+gem sources --add http://sixarm.com
+</code></pre>
+
+<p>To install with high security:</p>
+
+<pre class="code ruby"><code>gem install sixarm_ruby_rexml --test --trust-policy HighSecurity
 </code></pre>
 
 <h2>Example</h2>
@@ -105,10 +119,49 @@
 <p>For docs go to <a href="http://sixarm.com/sixarm_ruby_rexml/doc">http://sixarm.com/sixarm_ruby_rexml/doc</a></p>
 
 <p>Want to help? We&#39;re happy to get pull requests.</p>
+
+<h2>Changes</h2>
+
+<ul>
+<li>2012-03-16 2.1.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.</li>
+<li>2012-03-14 2.0.6 Rename Attributes#to<em>hash to #to</em>a<em>hash to unmask Ruby core Attributes#to</em>hash </li>
+<li>2012-03-14 2.0.4 Fix file includes</li>
+<li>2012-03-13 2.0.0 Lift the REXML extension from the sixarm<em>ruby</em>ramp gem</li>
+</ul>
+
+<h2>License</h2>
+
+<p>You may choose any of these open source licenses:</p>
+
+<ul>
+<li>Apache License</li>
+<li>BSD License</li>
+<li>CreativeCommons License, Non-commercial Share Alike</li>
+<li>GNU General Public License Version 2 (GPL 2)</li>
+<li>GNU Lesser General Public License (LGPL)</li>
+<li>MIT License</li>
+<li>Perl Artistic License</li>
+<li>Ruby License</li>
+</ul>
+
+<p>The software is provided &quot;as is&quot;, without warranty of any kind, 
+express or implied, including but not limited to the warranties of 
+merchantability, fitness for a particular purpose and noninfringement. </p>
+
+<p>In no event shall the authors or copyright holders be liable for any 
+claim, damages or other liability, whether in an action of contract, 
+tort or otherwise, arising from, out of or in connection with the 
+software or the use or other dealings in the software.</p>
+
+<p>This license is for the included software that is created by SixArm;
+some of the included software may have its own licenses, copyrights, 
+authors, etc. and these do take precedence over the SixArm license.</p>
+
+<p>Copyright (c) 2006-2013 Joel Parker Henderson.</p>
 </div></div>
     
     <div id="footer">
-  Generated on Thu Mar 15 13:26:43 2012 by 
+  Generated on Fri Mar 16 15:41:32 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.7.5 (ruby-1.9.3).
 </div>
