@@ -13,8 +13,12 @@ This Ruby gem has REXML core extensions to help clean up XML.
   * REXML::Document#remove_attributes: remove all attributes from the document's elements.
   * REXML::Element#remove_attributes: remove all attributes from the element.
 
+For docs go to <http://sixarm.com/sixarm_ruby_rexml/doc>
 
-## Quickstart
+Want to help? We're happy to get pull requests.
+
+
+## Install quickstart
 
 Install:
 
@@ -22,14 +26,14 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_rexml", "=2.1.0"
+    gem "sixarm_ruby_rexml", "~>2.1.0"
 
 Require:
 
     require "sixarm_ruby_rexml"
 
 
-## High Security (Optional)
+## Install with security (optional)
 
 To enable high security	for all	our gems:
 
@@ -51,13 +55,6 @@ Read an XML document then remove all its attributes:
     doc = REXML::Document.new(xml)
     doc.remove_attributes
     puts doc.to_s
-
-
-## More
-
-For docs go to <http://sixarm.com/sixarm_ruby_rexml/doc>
-
-Want to help? We're happy to get pull requests.
 
 
 ## Changes
