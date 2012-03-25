@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> REXML core for XML documents, elements, attributes
 
-* Docs: <http://sixarm.com/sixarm_ruby_rexml/doc>  
+* Doc: <http://sixarm.com/sixarm_ruby_rexml/doc>  
+* Gem: <http://rubygems.org/gems/sixarm_ruby_rexml>
 * Repo: <http://github.com/sixarm/sixarm_ruby_rexml>  
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
