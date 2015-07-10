@@ -3,7 +3,7 @@
 * Doc: <http://sixarm.com/sixarm_ruby_rexml/doc>  
 * Gem: <http://rubygems.org/gems/sixarm_ruby_rexml>
 * Repo: <http://github.com/sixarm/sixarm_ruby_rexml>  
-* Email: Joel Parker Henderson, <joel@sixarm.com>
+<!--HEADER-SHUT-->
 
 
 ## Introduction
@@ -19,32 +19,29 @@ For docs go to <http://sixarm.com/sixarm_ruby_rexml/doc>
 Want to help? We're happy to get pull requests.
 
 
-## Install quickstart
+<!--INSTALL-OPEN-->
 
-Install:
+## Install
 
-    gem install sixarm_ruby_rexml
+To install using a Gemfile, add this:
 
-Bundler:
+    gem "sixarm_ruby_rexml", ">= 2.1.1, < 3"
 
-    gem "sixarm_ruby_rexml", "~>2.1.0"
+To install using the command line, run this:
 
-Require:
+    gem install sixarm_ruby_rexml -v ">= 2.1.1, < 3"
+
+To install using the command with high security, run this:
+
+    wget http://sixarm.com/sixarm.pem
+    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
+    gem install sixarm_ruby_rexml -v ">= 2.1.1, < 3" --trust-policy HighSecurity
+
+To require the gem in your code:
 
     require "sixarm_ruby_rexml"
 
-
-## Install with security (optional)
-
-To enable high security	for all	our gems:
-
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem
-    gem sources --add http://sixarm.com
-
-To install with high security:
-
-    gem install sixarm_ruby_rexml --trust-policy HighSecurity
+<!--INSTALL-SHUT-->
 
 
 ## Example
