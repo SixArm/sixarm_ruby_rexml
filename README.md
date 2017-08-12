@@ -1,4 +1,4 @@
-# Ruby » <br> REXML core for XML documents, elements, attributes
+SixArm.com → Ruby → <br> REXML core for XML documents, elements, attributes
 
 * Doc: <http://sixarm.com/sixarm_ruby_rexml/doc>  
 * Gem: <http://rubygems.org/gems/sixarm_ruby_rexml>
