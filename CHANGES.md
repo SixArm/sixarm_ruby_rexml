@@ -1,5 +1,6 @@
 # Changes
 
+* 2017-08-13 2.1.2 Update to Ruby 2.4, spdx licenses, rake test, etc.
 * 2015-07-07 2.1.1 Update gemspec to use file manifest
 * 2012-03-16 2.1.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs
 * 2012-03-14 2.0.6 Rename Attributes#to_hash to #to_a_hash to unmask Ruby core Attributes#to_hash
