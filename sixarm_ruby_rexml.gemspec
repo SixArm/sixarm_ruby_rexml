@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_rexml"
-  s.summary           = "SixArm.com » Ruby » REXML extensions"
+  s.summary           = "SixArm.com → Ruby → REXML extensions"
   s.description       = "REXML extensions for XML documents, elements, and attributes"
   s.version           = "2.1.1"
 
